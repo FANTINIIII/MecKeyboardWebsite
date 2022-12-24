@@ -1,0 +1,71 @@
+.header {
+    height: 100px;
+    border-bottom: 7px solid;
+    border-image: linear-gradient(to right, blue, green, yellow, orange, red, purple) 1;
+    background-color: rgb(29, 25, 25);
+    display: flex;
+    overflow: visible;
+    min-width: 700px;
+}
+
+.title {
+    background-color: rgb(29, 25, 25);
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    height: 100%;
+    width: 180px;
+    line-height: 100px;
+    font-size: 27px;
+    font-weight: bold;
+    margin: 0 23.7% 0 50px;
+}
+
+.titleA {
+    text-decoration: none;
+    color: white;
+}
+
+.buttonA {
+    text-decoration: none;
+    margin: calc(100px * 20 / 100) 25px calc(100px * 20 / 100) 0;
+}
+
+.button {
+    width: 100px;
+    height: 100%;
+    line-height: calc(100px * 60 / 100);
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+    border-radius: 15px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+    color: white;
+}
+
+.button:hover {
+    background-color: yellow;
+    color: black;
+    border-radius: 15px;
+    transition: background-color 0.5s;
+}
+
+.button:hover::after {
+    opacity: 0.4;
+}
+
+.active {
+    width: 100px;
+    height: 100%;
+    line-height: calc(100px * 60 / 100);
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+    border-radius: 15px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+    color: black;
+    background-color: yellow;
+}
